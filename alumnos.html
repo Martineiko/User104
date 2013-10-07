@@ -74,21 +74,19 @@
 
                 <div id="col1">
                 
+		<form action="" method="" id="" name="" onsubmit="return validacion()">
 
-            <form method="post" action="http://Otrapagina.com">
+            <form id="form1" name="form1" method="post" action="registraAlumno.php">
 
-                <label for="pass">Codigo: </label>
-                <input type="password" id="code" name="pass" />
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre">
-                <label for="pass">Apellido Paterno: </label>
-                <input type="password" id="Ap" name="pass" />
-                <label for="pass">Apellido Materno: </label>
-                <input type="password" id="Am" name="pass" />
-                <label for="bday">Cumpleaños</label> 
-                <input type="date" id="bday" name="bday" />           
+                <label for="Codigo">Codigo: </label>   
+                <input type="text" id="Codigo" name="Codigo" />
+                <label for="Nombre">Nombre: </label>
+                <input type="text" id="Nombre" name="Nombre">
+                <label for="ApellidoP">Apellido Paterno: </label>
+                <input type="text" id="ApellidoP" name="ApellidoP" />
+                          
 
-            </form>
+            <!--</form>-->
 
         </div>
 
@@ -97,21 +95,21 @@
 		</p>	
 		</div>
 		<div class="one-third column">
-<label for="pass">Carrera: </label>
-                <input type="password" id="Carrera" name="pass" />
-                <label for="pass">Estado: </label>
-                <input type="password" id="Est" name="pass" />
-                <label for="pass">Municipio: </label>
-                <input type="password" id="Mun" name="pass" />
-                <label for="pass">Domicilio: </label>
-                <input type="password" id="Dom" name="pass" />
-                <label for="pass">Cp: </label>
-                <input type="password" id="Cp" name="pass" />
+			<label id="inv2">espacio</label>
+			<input type="text" id="inv">
+				<label for="ApellidoM">Apellido Materno: </label>
+                <input type="text" id="ApellidoM" name="ApellidoM" />
+				<label for="Carrera">Carrera: </label>
+                <input type="text" id="Carrera" name="Carrera" />
+                <label for="Email">Email: </label>
+                <input type="text" id="Email" name="Email" />
                 <button type="submit">Ingresar</button>
 		</div>
-
+	</form>
+		</form>
 	</div><!-- container -->
 
+    <script type="js/validacion.js"></script>
 
 <!-- End Document
 ================================================== -->

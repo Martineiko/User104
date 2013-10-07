@@ -56,6 +56,10 @@
    				<li style="float: left;"><a href="noticias.html" title="Enlace genérico">Noticias&nbsp </a></li>
    				<li style="float: left;"><a href="#" title="Enlace genérico">|&nbsp </a></li>
    				<li style="float: left;"><a href="nosotros.html" title="Enlace genérico">Acerca de Nosotros&nbsp </a></li>
+   				<li style="float: left;"><a href="#" title="Enlace genérico">|&nbsp </a></li>
+   				<li style="float: left;"><a href="cursos.html" title="Enlace genérico">Captura de cursos&nbsp </a></li>
+   				<li style="float: left;"><a href="#" title="Enlace genérico">|&nbsp </a></li>
+   				<li style="float: left;"><a href="alumnos.html" title="Enlace genérico">Captura de alumnos&nbsp </a></li>
 			</ul>
 			</div>
 			<hr />
@@ -65,15 +69,16 @@
 			<p>Una Universidad que nace de la necesidad de ofrecer carreras relacionadas con la programacion de alto nivel y enfocadas a los mas nuevos metodos de programacion, asi como llevar al alumno por un acercamiento con las empresas desarrolladoras de software del pais y del mundo entero.</p>
 		</div>
 		<div class="one-third column">
-			<form method="post" action="http://Otrapagina.com">
+			<form method="post" action="cursos.html">
                 
-                <label for="nombre">Usuario: </label>
-                <input type="text" id="nombre" name="nombre"> <br />
+                <label for="Usuario">Usuario: </label>
+                <input type="text" id="Usuario" name="Usuario"> <br />
                 <label for="pass">Contraseña: </label>
                 <input type="password" id="pass" name="pass" />
-                <button type="submit">Ingresar</button>           
+    <button id="enviar" type="submit" onclick="cifrar()">Enviar</button>
 
             </form>
+        </form>
 		</div>
 		<div class="one-third column">
 			<h3>Noticias &amp; Avisos</h3>
@@ -82,6 +87,13 @@
 
 	</div><!-- container -->
 
+    <script src="js/sha1.js"></script>
+    <script>
+        function cifrar(){
+            var input_pass = document.getElementById("pass");
+            input_pass.value = sha1(input_pass.value);
+        }
+    </script>
 
 <!-- End Document
 ================================================== -->
